@@ -16,22 +16,101 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		D31B13A42CA6EBFD007C5EB2 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		D31B13862CA6E28A007C5EB2 /* ISBN */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ISBN; sourceTree = BUILT_PRODUCTS_DIR; };
+		D31B13992CA6E8C3007C5EB2 /* ISBNTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ISBNTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D31B13A62CA6EBFD007C5EB2 /* WinningScore */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = WinningScore; sourceTree = BUILT_PRODUCTS_DIR; };
+		D31B13B42CA6EF5D007C5EB2 /* WinningScoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WinningScoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		D31B13A12CA6E99C007C5EB2 /* Exceptions for "ISBN" folder in "ISBNTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Functions/calculateISBNSum.swift,
+			);
+			target = D31B13982CA6E8C3007C5EB2 /* ISBNTests */;
+		};
+		D31B13AF2CA6EC1E007C5EB2 /* Exceptions for "ISBN" folder in "WinningScore" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Functions/getInput.swift,
+			);
+			target = D31B13A52CA6EBFD007C5EB2 /* WinningScore */;
+		};
+		D31B13BE2CA6EF97007C5EB2 /* Exceptions for "WinningScore" folder in "WinningScoreTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Functions/getWinner.swift,
+			);
+			target = D31B13B32CA6EF5D007C5EB2 /* WinningScoreTests */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		D31B13882CA6E28A007C5EB2 /* ISBN */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				D31B13A12CA6E99C007C5EB2 /* Exceptions for "ISBN" folder in "ISBNTests" target */,
+				D31B13AF2CA6EC1E007C5EB2 /* Exceptions for "ISBN" folder in "WinningScore" target */,
+			);
 			path = ISBN;
+			sourceTree = "<group>";
+		};
+		D31B139A2CA6E8C3007C5EB2 /* ISBNTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = ISBNTests;
+			sourceTree = "<group>";
+		};
+		D31B13A72CA6EBFD007C5EB2 /* WinningScore */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				D31B13BE2CA6EF97007C5EB2 /* Exceptions for "WinningScore" folder in "WinningScoreTests" target */,
+			);
+			path = WinningScore;
+			sourceTree = "<group>";
+		};
+		D31B13B52CA6EF5D007C5EB2 /* WinningScoreTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = WinningScoreTests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		D31B13832CA6E28A007C5EB2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D31B13962CA6E8C3007C5EB2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D31B13A32CA6EBFD007C5EB2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D31B13B12CA6EF5D007C5EB2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -45,6 +124,9 @@
 			isa = PBXGroup;
 			children = (
 				D31B13882CA6E28A007C5EB2 /* ISBN */,
+				D31B139A2CA6E8C3007C5EB2 /* ISBNTests */,
+				D31B13A72CA6EBFD007C5EB2 /* WinningScore */,
+				D31B13B52CA6EF5D007C5EB2 /* WinningScoreTests */,
 				D31B13872CA6E28A007C5EB2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -53,6 +135,9 @@
 			isa = PBXGroup;
 			children = (
 				D31B13862CA6E28A007C5EB2 /* ISBN */,
+				D31B13992CA6E8C3007C5EB2 /* ISBNTests.xctest */,
+				D31B13A62CA6EBFD007C5EB2 /* WinningScore */,
+				D31B13B42CA6EF5D007C5EB2 /* WinningScoreTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -82,6 +167,72 @@
 			productReference = D31B13862CA6E28A007C5EB2 /* ISBN */;
 			productType = "com.apple.product-type.tool";
 		};
+		D31B13982CA6E8C3007C5EB2 /* ISBNTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D31B139D2CA6E8C3007C5EB2 /* Build configuration list for PBXNativeTarget "ISBNTests" */;
+			buildPhases = (
+				D31B13952CA6E8C3007C5EB2 /* Sources */,
+				D31B13962CA6E8C3007C5EB2 /* Frameworks */,
+				D31B13972CA6E8C3007C5EB2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				D31B139A2CA6E8C3007C5EB2 /* ISBNTests */,
+			);
+			name = ISBNTests;
+			packageProductDependencies = (
+			);
+			productName = ISBNTests;
+			productReference = D31B13992CA6E8C3007C5EB2 /* ISBNTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D31B13A52CA6EBFD007C5EB2 /* WinningScore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D31B13AA2CA6EBFD007C5EB2 /* Build configuration list for PBXNativeTarget "WinningScore" */;
+			buildPhases = (
+				D31B13A22CA6EBFD007C5EB2 /* Sources */,
+				D31B13A32CA6EBFD007C5EB2 /* Frameworks */,
+				D31B13A42CA6EBFD007C5EB2 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				D31B13A72CA6EBFD007C5EB2 /* WinningScore */,
+			);
+			name = WinningScore;
+			packageProductDependencies = (
+			);
+			productName = WinningScore;
+			productReference = D31B13A62CA6EBFD007C5EB2 /* WinningScore */;
+			productType = "com.apple.product-type.tool";
+		};
+		D31B13B32CA6EF5D007C5EB2 /* WinningScoreTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D31B13B82CA6EF5D007C5EB2 /* Build configuration list for PBXNativeTarget "WinningScoreTests" */;
+			buildPhases = (
+				D31B13B02CA6EF5D007C5EB2 /* Sources */,
+				D31B13B12CA6EF5D007C5EB2 /* Frameworks */,
+				D31B13B22CA6EF5D007C5EB2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				D31B13B52CA6EF5D007C5EB2 /* WinningScoreTests */,
+			);
+			name = WinningScoreTests;
+			packageProductDependencies = (
+			);
+			productName = WinningScoreTests;
+			productReference = D31B13B42CA6EF5D007C5EB2 /* WinningScoreTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -93,6 +244,15 @@
 				LastUpgradeCheck = 1600;
 				TargetAttributes = {
 					D31B13852CA6E28A007C5EB2 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+					D31B13982CA6E8C3007C5EB2 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+					D31B13A52CA6EBFD007C5EB2 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+					D31B13B32CA6EF5D007C5EB2 = {
 						CreatedOnToolsVersion = 16.0;
 					};
 				};
@@ -112,12 +272,53 @@
 			projectRoot = "";
 			targets = (
 				D31B13852CA6E28A007C5EB2 /* ISBN */,
+				D31B13982CA6E8C3007C5EB2 /* ISBNTests */,
+				D31B13A52CA6EBFD007C5EB2 /* WinningScore */,
+				D31B13B32CA6EF5D007C5EB2 /* WinningScoreTests */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		D31B13972CA6E8C3007C5EB2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D31B13B22CA6EF5D007C5EB2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D31B13822CA6E28A007C5EB2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D31B13952CA6E8C3007C5EB2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D31B13A22CA6EBFD007C5EB2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D31B13B02CA6EF5D007C5EB2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -263,6 +464,80 @@
 			};
 			name = Release;
 		};
+		D31B139E2CA6E8C3007C5EB2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nuutrai.ISBNTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		D31B139F2CA6E8C3007C5EB2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nuutrai.ISBNTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		D31B13AB2CA6EBFD007C5EB2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		D31B13AC2CA6EBFD007C5EB2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		D31B13B92CA6EF5D007C5EB2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nuutrai.WinningScoreTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		D31B13BA2CA6EF5D007C5EB2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nuutrai.WinningScoreTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -280,6 +555,33 @@
 			buildConfigurations = (
 				D31B138E2CA6E28A007C5EB2 /* Debug */,
 				D31B138F2CA6E28A007C5EB2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D31B139D2CA6E8C3007C5EB2 /* Build configuration list for PBXNativeTarget "ISBNTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D31B139E2CA6E8C3007C5EB2 /* Debug */,
+				D31B139F2CA6E8C3007C5EB2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D31B13AA2CA6EBFD007C5EB2 /* Build configuration list for PBXNativeTarget "WinningScore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D31B13AB2CA6EBFD007C5EB2 /* Debug */,
+				D31B13AC2CA6EBFD007C5EB2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D31B13B82CA6EF5D007C5EB2 /* Build configuration list for PBXNativeTarget "WinningScoreTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D31B13B92CA6EF5D007C5EB2 /* Debug */,
+				D31B13BA2CA6EF5D007C5EB2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
